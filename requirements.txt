@@ -11,6 +11,7 @@ distlib
 filelock
 Flask
 gast
+tensorrt
 google-auth
 google-auth-oauthlib
 google-pasta
