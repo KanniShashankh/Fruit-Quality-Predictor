@@ -14,7 +14,7 @@ def preprocess(file):
     ImageFile.LOAD_TRUNCATED_IMAGES =False
     org_img=Image.open(BytesIO(file.read()))
     org_img.load()
-    img=org_img.resize((100,100), Image.ANTIALIAS)
+    img=org_img.resize((100,100), Image.Resampling.LANCZOS)
 
     img=image.img_to_array(img)
     org_img=image.img_to_array(org_img)
